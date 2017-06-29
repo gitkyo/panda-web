@@ -763,15 +763,5 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'panda',
-  'username' => 'root',
-  'password' => 'H!8J5WdyL./B-sjH',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_Al_x_bP2wTF0JaK24_E8DferIwrL6VV_kesHf4AHiJUe6yNomE0iXiUYTfT6o6usuRfe0s3jpw/sync';
