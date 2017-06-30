@@ -1,6 +1,7 @@
 # La plateforme web de Panda (Drupal 8)
 ![Panda](http://i.imgur.com/z4GLLwJ.gif  "Panda")
 
+
 - Le répertoire "doc" contient toutes les instructions (configuration, instllation, gestion de la base...)
 - Le répertoire "modules/custom" contient les modules personalisé.
 - Les files, la base de donnée et le fichier "settings.local.php" ne sont pas versionnés -> Il faut les télécharger
