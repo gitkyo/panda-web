@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * @file
+ * hook_hp module.
+ */
+
+/*
+	this function to add many variable for this specific template
+*/
+function hook_hp_preprocess_page__front(&$variables){
+
+	// get current node ID
+	$node = \Drupal::routeMatch()->getParameter('node');
+
+	// get all data for the page
+	$data = getContentHp($node->id());
+
+	//set variables
+	$variables['data'] = $data;
+
+}
+
+function getContentHp($nid){
+
+	$data = [];
+
+	// Get nid
+	$data['nid'] = $nid;
+
+
+	// Get autre chose
+	// ...
+
+
+	/*  EXEMPLE DE REPERATION DE DATA
+	* Get picture on top for fold1
+	*/
+	/*
+	$query = db_query("
+		SELECT f.uri, p.field_poster_alt,
+		p.field_poster_title
+		from file_managed f
+		join node__field_poster p
+		on f.fid = p.field_poster_target_id
+		where p.entity_id = $nid
+	");
+
+	$pictureOnTop = $query->fetchAll();
+
+	// Convert style image
+	$pictureOnTop[0]->uri = entity_load('image_style', '2000_par_600')->buildUrl($pictureOnTop[0]->uri);
+
+	// add to global var data
+	$data['pictureOnTop'] = $pictureOnTop[0];
+
+	//Get intro
+	$query = db_query("
+		SELECT i.field_intro_contact_value
+		FROM node__field_intro_contact i
+	");
+
+	$intro = $query->fetchAll();
+	$data['intro'] = $intro[0]->field_intro_contact_value;
+	*/
+
+
+	// Return final
+	return $data;
+
+}
+

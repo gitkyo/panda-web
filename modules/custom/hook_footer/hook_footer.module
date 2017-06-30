@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * hook_footer module.
+ */
+
+/*
+	this function to add many variable for this specific template
+*/
+function hook_footer_preprocess_region__footer(&$variables){
+
+	$infoFooter = getInfoFooter();
+	$variables['infoFooter'] = $infoFooter;
+
+}
+
+function getInfoFooter(){
+
+
+}
