@@ -7379,11 +7379,90 @@ p:last-child,
 @font-face {
   font-family: 'Viper Nora';
 }
+body.page-node-type-page-d-accueil {
+  margin-top: 0px;
+  /* Collapsing Navbar Styles */
+  /* fold Styles */
+}
+@media (max-width: 950px) {
+  body.page-node-type-page-d-accueil .navbar-header {
+    float: none;
+  }
+  body.page-node-type-page-d-accueil .navbar-toggle {
+    display: block;
+  }
+  body.page-node-type-page-d-accueil .navbar-collapse.collapse {
+    display: none !important;
+  }
+  body.page-node-type-page-d-accueil .navbar-nav {
+    float: none!important;
+  }
+  body.page-node-type-page-d-accueil .navbar-nav li {
+    float: none;
+  }
+  body.page-node-type-page-d-accueil .navbar-nav a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  body.page-node-type-page-d-accueil .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  body.page-node-type-page-d-accueil .collapsing {
+    overflow: hidden !important;
+  }
+}
 body.page-node-type-page-d-accueil .swiper-container {
   width: 600px;
   height: 300px;
 }
-body.page-node-type-page-d-accueil h1 {
-  color: red;
+body.page-node-type-page-d-accueil .navbar-brand {
+  padding: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+body.page-node-type-page-d-accueil .navbar-nav {
+  margin-top: 8px;
+}
+body.page-node-type-page-d-accueil .navbar-nav li:not(:first-child) {
+  margin-left: 20px;
+}
+body.page-node-type-page-d-accueil .navbar-right {
+  margin-right: 20px;
+}
+body.page-node-type-page-d-accueil .navbar-default {
+  padding: 10px 0;
+  opacity: 0.6;
+}
+body.page-node-type-page-d-accueil .navbar-default a {
+  font-size: 1.4em;
+  color: black;
+}
+body.page-node-type-page-d-accueil .navbar-default a:hover {
+  font-weight: bolder;
+  color: #42b0ad;
+}
+body.page-node-type-page-d-accueil .navbar-default.affix {
+  padding: 0;
+}
+body.page-node-type-page-d-accueil .navbar-default.affix a {
+  font-size: 1.2em;
+}
+body.page-node-type-page-d-accueil .fold1 {
+  padding-top: 60px;
+  position: relative;
+  background: url('../images/header.jpg') no-repeat 100% 0%;
+  min-height: 1020px;
+  background-size: 100% auto;
+}
+body.page-node-type-page-d-accueil .fold1 div.blocFold1 button {
+  margin-top: 40px;
+}
+body.page-node-type-page-d-accueil .fold1 div.blocFold1 p.preSlogan {
+  color: #fff;
+  font-family: 'Proxima Nova Thin';
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 6em;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

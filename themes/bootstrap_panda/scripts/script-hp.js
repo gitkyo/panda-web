@@ -1,7 +1,12 @@
 jQuery( document ).ready(function() {
 
     var $ = jQuery;
-
+// Initialize affix and add an offset to add affix class on scroll
+$('#mainNav').affix({
+  offset: {
+    top: 100
+  }
+})
     //doc swiper : http://idangero.us/swiper/api/#.WVUUzIjyhaQ
     var startGallery = function(){
 
