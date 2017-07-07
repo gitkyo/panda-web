@@ -1,76 +1,155 @@
-body.page-node-type-page-d-accueil{
-	margin-top: 0px;
-	@media (max-width: 950px) {
-    	.navbar-header {float: none}
-   		.navbar-toggle {display: block}
-		.navbar-collapse.collapse {display: none!important}
-		.navbar-nav {
-        	float: none!important;
-    		li {float: none}
-   			a {
-       			padding-top: 10px;
-        		padding-bottom: 10px;
-    		}
-		}
-    	.navbar-collapse.collapse.in {display: block!important}
-		.collapsing {overflow: hidden!important}
-	}
-	.swiper-container {
-	    width: 600px;
-	    height: 300px;
-	}
-/* Collapsing Navbar Styles */
-	.navbar-brand{
-		padding: 0;
-		margin-left: 15px;
-		margin-top: 10px
-	}
-	
-	.navbar-nav{
-		margin-top: 8px;
-		li:not(:first-child) {
-			margin-left: 20px
-		};
-	}
-	.navbar-right{margin-right: 20px}
-	.navbar-default {
-    	padding: 10px 0;
-		opacity: 0.6;
-		a{
-			font-size: 1.4em;
-			color: black
-		}
-		a:hover{
-			font-weight:bolder;
-			color :#42b0ad;
-		}
-  	}
-  	.navbar-default.affix {
-    	padding: 0;
-		a{font-size: 1.2em} 
+body.page-node-type-page-d-accueil {
+  margin-top: 0px;
+  .container-fluid.main {
+    padding: 0;
   }
-/* fold Styles */
-.fold1{		
-			padding-top: 60px;
-			position: relative;
-			background: url('../images/header.jpg') no-repeat 100% 0%;
-			min-height: 1020px;	
-			
-			background-size:100% auto;
-			div.blocFold1{
-							
-				button{
-					margin-top: 40px;
-				}
-				p.preSlogan{
-					color: #fff;
-				    font-family: 'Proxima Nova Thin';
-				    letter-spacing: 10px;
-				    text-transform: uppercase;
-				    font-size: 6em;
-				    margin-bottom: 20px;
-				}
-
-			}
-}
+  @media (max-width: 950px) {
+    .navbar-header {
+      float: none
+    }
+    .navbar-toggle {
+      display: block
+    }
+    .navbar-collapse.collapse {
+      display: none!important
+    }
+    .navbar-nav {
+      float: none!important;
+      li {
+        float: none
+      }
+      a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    .navbar-collapse.collapse.in {
+      display: block!important
+    }
+    .collapsing {
+      overflow: hidden!important
+    }
+  }
+  .swiper-container {
+    width: 600px;
+    height: 300px;
+  }
+  /* Collapsing Navbar Styles */
+  .navbar-brand {
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 10px
+  }
+  .navbar-nav {
+    margin-top: 8px;
+    li:not(:first-child) {
+      margin-left: 30px
+    }
+  }
+  .navbar-right {
+    margin-right: 20px
+  }
+  .navbar-default {
+    padding: 10px 0;
+    opacity: 0.6;
+    a {
+      font-size: 1.3em;
+      color: black
+    }
+    a:hover {
+      font-weight: bolder;
+      color: #457d9e;
+    }
+  }
+  .navbar-default.affix {
+    padding: 0;
+    a {
+      font-size: 1.2em
+    }
+  }
+  /* fold Styles */
+  .fold1 {
+    
+    position: relative;
+    background: url('../images/fold1.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    div.blocFold1 {
+      .btn-outline {
+        background-color: orange;
+        opacity: 0.5;
+        color: inherit;
+        transition: all .5s;
+      }
+      .btn-primary.btn-outline {
+        color: #fff;
+        border-color: orange;
+        font-family: 'SourceSansPro';
+        text-transform: uppercase;
+        border-width: 3px;
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-size: 3.2vh;
+      }
+      .btn-primary.btn-outline:hover {
+        background-color: orange;
+        opacity: 1
+      }
+      span {
+        background-color: #90c3d8;
+        padding: 35px 0
+      }
+      
+      p.title {
+        color: #3e3e3e;
+        font-family: 'SourceSansPro';
+        text-transform: uppercase;
+		line-height: 100%;
+        letter-spacing: 2px;
+        font-size: 10vh;
+        margin-top: 15vh;
+		 margin-bottom: 0px;
+        margin-left: 30px;
+       
+      }
+      p.subtitle {
+        color: black;
+        font-family: 'SourceSansPro light';
+        text-transform: uppercase;
+        font-size: 3vh;
+        margin-left: 55px;
+      }
+      p.textbody {
+        color: black;
+        font-family: 'OpenSans-CondLight';
+        text-align: justify;
+        font-size: 2.5vh;
+        margin-left: 30px;
+        margin-top: 20vh;
+      }
+button {
+        margin-top: 22vh;
+      }
+	   .btn-outline {
+        background-color: orange;
+        opacity: 0.5;
+        color: inherit;
+        transition: all .5s;
+      }
+      .btn-primary.btn-outline {
+        color: #fff;
+        border-color: orange;
+        font-family: 'SourceSansPro';
+        text-transform: uppercase;
+        border-width: 3px;
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-size: 3.2vh;
+      }
+      .btn-primary.btn-outline:hover {
+        background-color: orange;
+        opacity: 1
+      }
+    }
+  }
 }
