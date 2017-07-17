@@ -1,46 +1,41 @@
-jQuery( document ).ready(function() {
+jQuery(document).ready(function () {
+  var $ = jQuery;
+   $('#mainNav').affix({
+    offset: {
+      top: 100
+    }
+  });
 
-    var $ = jQuery;
-// Initialize affix and add an offset to add affix class on scroll
-$('#mainNav').affix({
-  offset: {
-    top: 100
+  var scrollToAncre = function () {
+    jQuery('a[href^="#"][class*="smooth"], button.ancre[href^="#"]').click(function () {
+      var id = jQuery(this).attr("href");
+      var offset = jQuery(id).offset().top
+      jQuery('html, body').animate({
+        scrollTop: offset
+      }, 'slow');
+      return false;
+    });
   }
 
-})
-
-    //doc swiper : http://idangero.us/swiper/api/#.WVUUzIjyhaQ
-    var startGallery = function(){
-
-        var mySwiper = new Swiper('.swiper-container', {
-
-            // If we need pagination
-           pagination: '.swiper-pagination',
-
-           // Navigation arrows
-           nextButton: '.swiper-button-next',
-           prevButton: '.swiper-button-prev',
-
-            speed: 400,
-            spaceBetween: 100
-        });
-    }
-var scrollToAncre = function(){
-		jQuery('a[href^="#"], button.ancre[href^="#"]').click(function(){  
-		    var id = jQuery(this).attr("href");
-		    var offset = jQuery(id).offset().top 
-		    jQuery('html, body').animate({scrollTop: offset}, 'slow'); 
-		    return false;  
-		});
+  var setSlider = function(){
+		//slideshow on en parle
+		var mySwiper = new Swiper ('.swiper-container', {
+			
+			slidesPerView: 7,
+			
+			simulateTouch : false,
+	        autoplayDisableOnInteraction : false,
+	        autoplay : 2500,	        
+	        loop: true,
+	        spaceBetween: 120,
+		})
 	}
-
-
-    window.init = function() {
-
-        startGallery();
-scrollToAncre ();
-    }
-
-    init(); // true
-
+  window.init = function () {
+    scrollToAncre();
+    setSlider();
+    
+  }
+  init(); // true
 });
+
+ 

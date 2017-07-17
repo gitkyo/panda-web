@@ -54,11 +54,11 @@ body.page-node-type-page-d-accueil {
     opacity: 0.6;
     a {
       font-size: 1.3em;
-      color: black
-    }
-    a:hover {
+      color: black;
+    &:hover {
       font-weight: bolder;
-      color: #457d9e;
+      color: #6ba1c5;
+    }
     }
   }
   .navbar-default.affix {
@@ -67,89 +67,408 @@ body.page-node-type-page-d-accueil {
       font-size: 1.2em
     }
   }
-  /* fold Styles */
+  /* font Styles */
+  span.title {
+    background-color: #6ba1c5;
+    padding-bottom: 8vh
+  }
+  p.title {
+    color: black;
+    font-family: 'SourceSansPro light';
+    text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: 2px;
+    font-size: 8vh;
+    font-weight: 600;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+    margin-left: 2vh;
+  }
+  p.subtitle {
+    color: black;
+    font-family: 'SourceSansPro light';
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 8vh;
+    margin-bottom: 0px;
+    margin-left: 5vh;
+  }
+  p.textbody {
+    color: black;
+    font-family: 'OpenSans-CondLight';
+    text-align: left;
+    font-size: 2.5vh;
+    margin-left: 2vw;
+    padding-top: 10vh;
+  }
+  /* fold1 */
   .fold1 {
-    
-    position: relative;
     background: url('../images/fold1.jpg') no-repeat;
     min-height: 100vh;
     background-size: cover;
-    div.blocFold1 {
-      .btn-outline {
-        background-color: orange;
-        opacity: 0.5;
-        color: inherit;
-        transition: all .5s;
-      }
-      .btn-primary.btn-outline {
-        color: #fff;
-        border-color: orange;
-        font-family: 'SourceSansPro';
-        text-transform: uppercase;
-        border-width: 3px;
-        letter-spacing: 2px;
-        font-weight: 100;
-        font-size: 3.2vh;
-      }
-      .btn-primary.btn-outline:hover {
-        background-color: orange;
-        opacity: 1
+    /* title */
+    span.title {
+      padding-bottom: 4vh;
+    }
+    p.title {
+      margin-top: 15vh;
+    }
+    p.subtitle {
+      font-size: 3vh;
+      margin-left: 4vh;
+    }
+    /* textbody */
+    p.textbody {
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    /* button */
+    button {
+      margin-top: 10vh;
+      margin-bottom: 2vh;
+      padding: 1vh 3vh;
+      text-align: center;
+    }
+    .btn-outline {
+      background-color: #ff5001;
+      color: inherit;
+      transition: all .5s;
+    }
+    .btn-primary.btn-outline {
+      color: white;
+      border-color: #ff5001;
+      font-family: 'SourceSansPro';
+      text-transform: uppercase;
+      border-width: 2px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 3vh;
+    &:hover {
+      transition: all 200ms ease-in;
+      transform: scale(1.1);
+    }
+    }
+  }
+  /* fold2 */
+  .fold2 {
+    padding: 0;
+    margin: 0;
+    /* title */
+    p.title {
+      margin-top: 4vh;
+      color: white
+    }
+    p.subtitle {
+      color: white
+    }
+    .titlePosition {
+      position: absolute;
+      top: 50px;
+      width: 80%;
+    }
+    /* textbody */
+    p.textbody {
+      color: white;
+      padding-top: 6vh;
+      padding-top: 18vh;
+    }
+    /* indicators */
+    ol.carousel-indicators {
+      width: inherit
+    }
+    #carousel-fold2 .carousel-indicators {
+      left: 0%;
+      top: 0%;
+      margin: 40vh 3vw;
+      ol.carousel-indicators {
+        margin-left: 0px;
+        left: 80%;
+        width: inherit;
       }
       span {
-        background-color: #90c3d8;
-        padding: 35px 0
-      }
-      
-      p.title {
-        color: #3e3e3e;
-        font-family: 'SourceSansPro';
-        text-transform: uppercase;
-		line-height: 100%;
-        letter-spacing: 2px;
-        font-size: 10vh;
-        margin-top: 15vh;
-		 margin-bottom: 0px;
-        margin-left: 30px;
-       
-      }
-      p.subtitle {
-        color: black;
-        font-family: 'SourceSansPro light';
-        text-transform: uppercase;
-        font-size: 3vh;
-        margin-left: 55px;
-      }
-      p.textbody {
         color: black;
         font-family: 'OpenSans-CondLight';
-        text-align: justify;
-        font-size: 2.5vh;
-        margin-left: 30px;
-        margin-top: 20vh;
-      }
-button {
-        margin-top: 22vh;
-      }
-	   .btn-outline {
-        background-color: orange;
-        opacity: 0.5;
-        color: inherit;
-        transition: all .5s;
-      }
-      .btn-primary.btn-outline {
-        color: #fff;
-        border-color: orange;
-        font-family: 'SourceSansPro';
         text-transform: uppercase;
-        border-width: 3px;
-        letter-spacing: 2px;
-        font-weight: 100;
-        font-size: 3.2vh;
+        font-size: 2.5vh;
       }
-      .btn-primary.btn-outline:hover {
-        background-color: orange;
-        opacity: 1
+      img {
+        margin-bottom: 3vh;
       }
     }
+    #carousel-fold2 .carousel-indicators li {
+      width: 10vw;
+      height: 10vw;
+      margin: 0 4vw;
+      cursor: pointer;
+      border: 4px solid black;
+      border-radius: 10vw;
+      opacity: 0.5;
+      transition: all 0.4s;
+    }
+    #carousel-fold2 .carousel-indicators .active {
+      background-color: #6ba1c5;
+      opacity: 1;
+      border-color: white;
+      img {
+        filter: invert(100%);
+        transform: scale(1.5);
+      }
+      span {
+        color: white;
+      }
+    }
+    /* slides */
+    .slide1 {
+      background: url('../images/Fold2_1.jpg') no-repeat;
+      min-height: 100vh;
+      background-size: cover;
+      .icontext {
+        margin-top: 50vh;
+        margin-left: 1vw;
+        max-width: 20vw;
+      }
+    }
+    .slide2 {
+      background: url('../images/Fold2_2.jpg') no-repeat;
+      min-height: 100vh;
+      background-size: cover;
+      .icontext {
+        margin-top: 50vh;
+        margin-left: 19vw;
+        max-width: 20vw;
+      }
+    }
+    .slide3 {
+      background: url('../images/Fold2_3.jpg') no-repeat;
+      min-height: 100vh;
+      background-size: cover;
+      .icontext {
+        margin-top: 50vh;
+        margin-left: 37vw;
+        max-width: 20vw;
+      }
+    }
+    .slide4 {
+      background: url('../images/Fold2_4.jpg') no-repeat;
+      min-height: 100vh;
+      background-size: cover;
+      .icontext {
+        margin-top: 50vh;
+        margin-left: 55vw;
+        max-width: 20vw;
+      }
+    }
+    .slide5 {
+      background: url('../images/Fold2_5.jpg') no-repeat;
+      min-height: 100vh;
+      background-size: cover;
+      .icontext {
+        margin-top: 50vh;
+        margin-left: 73vw;
+        max-width: 20vw;
+      }
+    }
+  }
+  /* fold3 */
+  .fold3 {
+    position: relative;
+    background: url('../images/fold3.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+  }
+  /* fold4 */
+  .fold4 {
+    padding: 0px;
+    p.title {
+      margin-top: 0vh;
+    }
+    .carousel-control {
+      background: none;
+      text-shadow: none;
+      color: #6ba1c5;
+      width: 8%
+    }
+    .carousel-indicators li {
+      height: 2vh;
+      width: 2vh;
+      margin-right: 1vh;
+      border-color: #6ba1c5;
+    }
+    .carousel-indicators li.active {
+      background-color: #6ba1c5;
+    }
+    ol.carousel-indicators {
+      margin-left: 0px;
+      left: 80%;
+      width: inherit;
+    }
+    .leftSlid {
+      min-height: 100vh;
+      border-style: solid;
+      border-width: 12vh 0;
+      border-left-width: 5vh;
+      border-color: #abdddc;
+    }
+    p.textbody {
+      padding-top: 0;
+      font-size: 2vh;
+    }
+    .list1 {
+      position: relative;
+      background: url('../images/1.jpg') no-repeat;
+      min-height: 20vh;
+      background-size: cover;
+      padding-top: 4vh;
+    }
+    .list2 {
+      position: relative;
+      background: url('../images/2.jpg') no-repeat;
+      min-height: 20vh;
+      background-size: cover;
+      padding-top: 4vh;
+    }
+    .list3 {
+      position: relative;
+      background: url('../images/3.jpg') no-repeat;
+      min-height: 20vh;
+      background-size: cover;
+      padding-top: 4vh;
+    }
+    .list4 {
+      position: relative;
+      background: url('../images/4.jpg') no-repeat;
+      min-height: 20vh;
+      background-size: cover;
+      padding-top: 4vh;
+    }
+    .rightSlid {
+      margin: 10vh 0;
+      border-style: solid;
+      border-width: 2vh 0;
+      border-right-width: 2vh;
+      border-color: #abdddc;
+      position: relative;
+      background: url('../images/fold4_1.jpg') no-repeat;
+      min-height: 80vh;
+      background-size: cover;
+    }
+    .slide1 {
+      .list {
+        margin-top: 12vh
+      }
+    }
+    .slide2 {
+      .rightSlid {
+        background: url('../images/Fold4_2.jpg') no-repeat;
+        background-size: cover
+      }
+      .list {
+        margin-top: 8vh
+      }
+    }
+    .slide3 {
+      .rightSlid {
+        background: url('../images/Fold4_3.jpg') no-repeat;
+        background-size: cover
+      }
+      .list {
+        margin-top: 12vh
+      }
+    }
+  }
+  /* fold5 */
+  .fold5 {
+    padding: 0px;
+    .imgfold5 {
+      background: url('../images/fold5.jpg') no-repeat;
+      min-height: 90vh;
+      background-size: cover;
+    }
+    p.titlebody {
+      color: black;
+      font-family: 'OpenSans-CondLight';
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 3.2vh;
+      margin-top: 24vh;
+    }
+    #mc_embed_signup input.adressMail{
+       margin: 10vh 0;
+      padding: 12px 0;
+      padding-left: 40px;
+      padding-right: 100px;
+      background-color: #4ac2c1;
+      border-width: 0px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 2vh;
+      color: white;
+      border-radius: 16px;
+      -moz-border-radius: 16px;
+      -webkit-border-radius: 16px;
+
+    }
+    input:focus {
+      outline: none;
+      border: 2px solid #4ac2c1;
+    }
+   
+     ::-webkit-input-placeholder {
+      color: white;
+    }
+    #mc-embedded-subscribe-form button{
+    background: none;
+    border: none;
+    margin-top: 10vh;
+  }
+  &:active{
+    border: none
+  }
+   #mc-embedded-subscribe.glyphicon-ok-circle {
+      margin-top: 0;
+      color: #4ac2c1;
+      font-size: 5vh;
+      cursor: pointer
+    }
+  }
+  /* fold6 */
+  .fold6 {
+    position: relative;
+    background-color: #4ac2c1;
+    min-height: 40vh;
+    p.title {
+      color: white;
+      font-weight: 200;
+      text-transform: uppercase;
+      line-height: 100%;
+      letter-spacing: 2px;
+      font-size: calc(1vw + 2vh);
+      margin: 4vh 0 ;
+
+      text-align: center;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 15vh;
+      	div.swiper-slide{
+						-webkit-filter: grayscale(100%); 
+						-webkit-transition: .5s ease-in-out;
+						-moz-filter: grayscale(100%); 
+						-moz-transition: .5s ease-in-out;
+	    				&:hover{
+							-webkit-filter: grayscale(0%);
+							-webkit-transition: .5s ease-in-out;
+							-moz-filter: grayscale(0%);
+							-moz-transition: .5s ease-in-out;
+	    				}
+        }
+    }
+  }
+  .footer{
+    margin: 0;
+    border: none;
+    min-height: 40vh;
   }
 }

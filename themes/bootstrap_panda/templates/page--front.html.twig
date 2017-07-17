@@ -1,5 +1,4 @@
 {{attach_library('bootstrap_panda/swiper')}} {{ attach_library('bootstrap_panda/script-hp')}}
-
 <div class="container-fluid main">
   {# Navbar #}
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -10,57 +9,363 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="./themes/bootstrap_panda/images/logo.png" alt=""></a>
+      <a class="navbar-brand" href="home"><img src="./themes/bootstrap_panda/images/logo.png" alt=""></a>
     </div>
-
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">ACCUEIL</a></li>
-        <li><a href="#concept">CONCEPT</a></li>
-        <li><a href="#valeurs">VALEURS</a></li>
-        <li><a href="#">KEY FEATURES</a></li>
-        <li><a href="#">TESTER</a></li>
-        <li><a href="#">BLOG</a></li>
+        <li><a class="smooth" href="#home">ACCUEIL</a></li>
+        <li><a class="smooth" href="#concept">CONCEPT</a></li>
+        <li><a class="smooth" href="#valeurs">VALEURS</a></li>
+        <li><a class="smooth" href="#key">KEY FEATURES</a></li>
+        <li><a class="smooth" href="#tester">TESTER</a></li>
+        <li><a class="smooth" href="#">BLOG</a></li>
       </ul>
     </div>
   </nav>
-
   {# Main #} {# Content #}
+  <div class="container-fluid fold1" id="home">
+    <div class="container-fluid">
+      <div class="row titre">
+        <div class="col-lg-8">
+          <p class="title">
+            <span class="title">P</span>anda
+          </p>
+          <p class="subtitle">la genouillère connectée</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row textbody">
+        <div class="col-lg-3">
+          <p class="textbody">qui ipsa animi nostrum prae setium volup nesse in animi nostrum prae setium voluptaus odit nqui taus odit nqui
+            impeditqui nostrum aliidfugit earuupta itat ionemte mporibus digniss imos distinctio nesse in animi nostrum pra
+            lup nesse in animi nostrum prae setium volup taus odit nqu iventore repreh quidem ut incidunt nihil enderit quidem
+            ut incidunt nihil necessitatibus rerum
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row button">
+        <div class="col-lg-offset-4 col-lg-4">
+          <button class="btn btn-primary btn-outline ancre" type="button" href="#tester">Tester notre produit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="container-fluid">
-    <div class="row fold1" id="home">
-      <div class="col-lg-12 blocFold1">
-        <div class="container-fluid">
-          <div class="row titre">
-            <div class="col-lg-8" id="home">
-              <p class="title">
-                <span>P</span>anda
-              </p>
-              <p class="subtitle">la genouillère connectée</p>
+  <div class="container-fluid fold2" id="concept">
+    <div class="row fold2">
+      <div class="col-lg-12 fold2">
+        <div id="carousel-fold2" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-fold2" data-slide-to="0" class="active"><img class="img-responsive " src="./themes/bootstrap_panda/images/PICTO_ENFILER.png" alt=""><span>enfiler panda</span></li>
+            <li data-target="#carousel-fold2" data-slide-to="1"><img class="img-responsive " src="./themes/bootstrap_panda/images/PICTO_ANALYSER.png" alt=""><span>nous analysons</span></li>
+            <li data-target="#carousel-fold2" data-slide-to="2"><img class="img-responsive " src="./themes/bootstrap_panda/images/PICTO_OPTIMISER.png" alt=""><span>optimiser les séances</span></li>
+            <li data-target="#carousel-fold2" data-slide-to="3"><img class="img-responsive " src="./themes/bootstrap_panda/images/PICTO_PROGRES.png" alt=""><span>suivez leur progrès</span></li>
+            <li data-target="#carousel-fold2" data-slide-to="4"><img class="img-responsive " src="./themes/bootstrap_panda/images/PICTO_RECUPERATION.png" alt=""><span>récupération optimale</span></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item slide1 active">
+              <div class="container-fluid ">
+                <div class="icontext">
+                  <p class="textbody">Faite votre séance, le patient porte le dispositif, s'y connecte sur le smartphone, et vous restez maître
+                    de séance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item slide2">
+              <div class="container-fluid ">
+                <div class="icontext">
+                  <p class="textbody">Nos algorithmes analysent en profondeur les données récupérées pendant la sèance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item slide3">
+              <div class="container-fluid ">
+                <div class="icontext">
+                  <p class="textbody">Notre analyse vous permet de diagnostiquer plus rapidement l'état du genou de votre patient pour presonnaliser
+                    parfaitement son protocole de rééducation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item slide4">
+              <div class="container-fluid ">
+                <div class="icontext">
+                  <p class="textbody">Nous vous donnons accès au suivi quantitatif des progrès de vous patients, tout au long de leur rééducation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item slide5">
+              <div class="container-fluid ">
+                <div class="icontext">
+                  <p class="textbody">Nous vous donnons accès au suivi quantitatif des progrès de vos patients,tout au long de leur rééducation.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="row textbody">
-            <div class="col-lg-4" >
-              <p class="textbody">qui ipsa animi nostrum praesetium voluptaus odit nqui non impedit cum qui nostrum aliidfugit earuupta itationemtemporibus dignissimos distinctio nesse inventore reprehenderit quidem ut incidunt nihil necessitatibus
-                rerum
-              </p>
-            </div>
-          </div>
-        </div>
-         <div class="container-fluid">
-          <div class="row button">
-            <div class="col-lg-offset-4 col-lg-4" >
-              <button class="btn btn-primary btn-outline">Tester notre produit</button>
-            </div>
+        <div class="titlePosition">
+          <div class="col-lg-8">
+            <p class="title">
+              <span class="title">C</span>omment
+            </p>
+            <p class="subtitle">ça marche ?</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="container-fluid fold3" id="valeurs">
+    <div class="container-fluid">
+      <div class="row titre">
+        <div class="col-lg-8">
+          <p class="title">
+            <span class="title">N</span>os
+          </p>
+          <p class="subtitle">valeurs</p>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row textbody">
+          <div class="col-lg-3">
+            <p class="textbody">Nous sommes une équipe d'hyperactifs qui pensent que bouger c 'est vivre. Nous pensons que tous les patients
+              doivent avoir accès aux meilleurs soins, à la meilleure rééducation possible. panda esr notre réponse à cela,
+              une genouillère connectée de conception 100% française accessible à tous.Elle permet à tous les kinésithérapeutes
+              d'accéder à une précision d'analyse réservée jusque-la à une élite..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="container-fluid fold4" id="key">
+    <div class="carousel slide" data-ride="carousel" id="carousel-fold4" data-interval="2500">
+      <!-- Bottom Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-fold4" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-fold4" data-slide-to="1"></li>
+        <li data-target="#carousel-fold4" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel Slides -->
+      <div class="carousel-inner">
+        <!-- slide1 -->
+        <div class="item slide1 active">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-6 leftSlid">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p class="title">
+                      <span class="title">A</span>ide au
+                    </p>
+                    <p class="subtitle">diagnostic</p>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row list">
+                    <div class="col-lg-4 list1">
+                      <p class="textbody">Evaluation précise des mouvements mineurs du genou</p>
+                    </div>
+                    <div class="col-lg-4 list2">
+                      <p class="textbody">Identification des facteurs d'instabilité</p>
+                    </div>
+                    <div class="col-lg-4 list3">
+                      <p class="textbody">Détermination des élements limitant la progression</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-5 rightSlid hidden-xs hidden-sm">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide2 -->
+        <div class="item slide2">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-6 leftSlid">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p class="title">
+                      <span class="title">A</span>ide au
+                    </p>
+                    <p class="subtitle">traitement</p>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row list">
+                    <div class=" col-lg-offset-1 col-lg-4 list1">
+                      <p class="textbody">Suggestion d'exercices thérapeutiques personnalisés</p>
+                    </div>
+                    <div class="col-lg-offset-1 col-lg-4 list2">
+                      <p class="textbody">Suivi des patients tout au long de leur rééducation</p>
+                    </div>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-offset-1 col-lg-4 list3">
+                        <p class="textbody">Restauration des potentialités de chaque individu</p>
+                      </div>
+                      <div class="col-lg-offset-1 col-lg-4 list4">
+                        <p class="textbody">Surveillance à distance et autonomisation des exercices</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-5 rightSlid hidden-xs hidden-sm"></div>
+            </div>
+          </div>
+        </div>
+        <!-- slide3 -->
+        <div class="item slide3 ">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-6 leftSlid">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p class="title">
+                      <span class="title">Q</span>ualité validée
+                    </p>
+                    <p class="subtitle">scientifiquement</p>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row list">
+                    <div class="col-lg-4 list1">
+                      <p class="textbody">Tests des mesures sur appareils certifiés</p>
+                    </div>
+                    <div class="col-lg-4 list2">
+                      <p class="textbody">Conçu en collaboration avec des kinés et des médecins</p>
+                    </div>
+                    <div class="col-lg-4 list3">
+                      <p class="textbody">les résultats de nos essais cliniques et retours d'experience sont disponibles sur le blog</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-5 rightSlid hidden-xs hidden-sm">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Buttons Next/Prev -->
+      <a data-slide="prev" href="#carousel-fold4" class="left carousel-control"><i class="glyphicon glyphicon-chevron-left"></i></a>
+      <a data-slide="next" href="#carousel-fold4" class="right carousel-control"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    </div>
+  </div>
 
+  <div class="container-fluid fold5" id="tester">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 imgfold5 hidden-xs hidden-sm">
+          <p class="title">
+            <span class="title">D</span>evenez
+          </p>
+          <p class="subtitle">betatesteur</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="container-fluid hidden-lg ">
+            <div class="row">
+              <p class="title">
+                <span class="title">D</span>evenez
+              </p>
+              <p class="subtitle">betatesteur</p>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-offset-2 col-lg-8">
+                <p class="titlebody">
+                  Rejoignez notre newsletter
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-offset-1 col-lg-10">
+                <p class="textbody">qui ipsa animi nostrum praesetium voluptaus odit nqui non impedit cum qui nostrum aliidfugit earuupta itationemtemporibus
+                  dignissimos distinctio nesse inventore reprehenderit quidem ut incidunt nihil qui ipsa animi nostrum praesetium
+                  voluptaus odit nqui non impedit sitatibus rerum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-offset-1 col-md-11">
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
+                <div id="mc_embed_signup">
+                  <form action="//pandaorthopedics.us16.list-manage.com/subscribe/post?u=961c7cd41d2f261508be883e7&amp;id=e77f58d5d7" method="post"
+                    id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class=" col-md-10">
+                          <div id="mc_embed_signup_scroll">
+                            <div class="mc-field-group">
+                              <input type="email" name="EMAIL" class="adressMail" id="mce-EMAIL" placeholder="Saisissez votre e-mail">
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" col-md-2">
+                          <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                          </div>
+                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d06f129083eff828a4b472733_958d70e3da" tabindex="-1" value=""></div>
+                          <div class="clear"> <button type="submit"> <i class="glyphicon glyphicon-ok-circle" name="subscribe" id="mc-embedded-subscribe" class="button"></i> </button></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </form>
+              </div>
+              <!--End mc_embed_signup-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="container-fluid fold6">
+  <div class="container-fluid">
+    <div class="row titre">
+      <div class="col-lg-offset-4 col-lg-4">
+        <p class="title">nos partenaires</p>
+      </div>
+    </div>
+    <div class='swiper-container'>
+      <div class='swiper-wrapper'>
+        <!-- Slides -->
+        <div class='swiper-slide'><a target="_blank" href="http://www.mines-stetienne.fr/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_mines.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://www.captronic.fr/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_captronic.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://www.wsbsport.biz/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_wsb.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://ligue-mediterranee.fff.fr/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_fff.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://www.monclubfutbol.com/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_monClub.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://www.cnrs.fr/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_cnrs.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://www.provence-pad.com/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_paysAix.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="https://www.pole-scs.org/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_solutions.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://thecamp.fr/fr/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_theCamp.png" alt=""></a></div>
+        <div class='swiper-slide'><a target="_blank" href="http://www.im2np.fr/"><img src="http://sportbak.com/themes/bootstrap_futbak/images/logoPartenaires/logo_Im2np.png" alt=""></a></div>
+      </div>
+    </div>
+    <!-- fin swiper-container -->
+  </div>
+</div>
+
+{% if page.footer %} {% block footer %}
+<footer class="footer {{ container }}" role="contentinfo">
+  {{ page.footer }}
+</footer>
+{% endblock %} {% endif %}
