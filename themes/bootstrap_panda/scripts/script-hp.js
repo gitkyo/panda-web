@@ -20,9 +20,7 @@ jQuery(document).ready(function () {
   var setSlider = function(){
 		//slideshow on en parle
 		var mySwiper = new Swiper ('.swiper-container', {
-			
-			slidesPerView: 7,
-			
+			slidesPerView: 7,	
 			simulateTouch : false,
 	        autoplayDisableOnInteraction : false,
 	        autoplay : 2500,	        

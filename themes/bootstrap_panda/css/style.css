@@ -7395,13 +7395,13 @@ p:last-child,
 body.page-node-type-page-d-accueil {
   margin-top: 0px;
   /* Collapsing Navbar Styles */
-  /* font Styles */
   /* fold1 */
   /* fold2 */
   /* fold3 */
   /* fold4 */
   /* fold5 */
   /* fold6 */
+  /* responsive*/
 }
 body.page-node-type-page-d-accueil .container-fluid.main {
   padding: 0;
@@ -7432,10 +7432,6 @@ body.page-node-type-page-d-accueil .container-fluid.main {
   body.page-node-type-page-d-accueil .collapsing {
     overflow: hidden !important;
   }
-}
-body.page-node-type-page-d-accueil .swiper-container {
-  width: 600px;
-  height: 300px;
 }
 body.page-node-type-page-d-accueil .navbar-brand {
   padding: 0;
@@ -7490,75 +7486,7 @@ body.page-node-type-page-d-accueil h2 {
 body.page-node-type-page-d-accueil p {
   font-family: 'OpenSans-CondLight';
   text-align: left;
-  margin-left: 2vw;
-}
-@media only screen and (min-width: 320px) {
-  body.page-node-type-page-d-accueil h1 {
-    font-size: 3em;
-  }
-  body.page-node-type-page-d-accueil h1.title {
-    margin-left: 0px;
-  }
-  body.page-node-type-page-d-accueil h1.title2 {
-    margin-left: 18px;
-    margin-top: 0;
-  }
-  body.page-node-type-page-d-accueil h1 span {
-    padding-bottom: 48px;
-  }
-  body.page-node-type-page-d-accueil h2 {
-    font-size: 1.2em;
-    margin-left: 10px;
-  }
-  body.page-node-type-page-d-accueil p {
-    font-size: 1.2em;
-    padding-top: 30px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  body.page-node-type-page-d-accueil h1 {
-    font-size: 4em;
-    margin-top: 100px;
-  }
-  body.page-node-type-page-d-accueil h1 span {
-    padding-bottom: 62px;
-  }
-  body.page-node-type-page-d-accueil h1.title {
-    margin-left: 20px;
-  }
-  body.page-node-type-page-d-accueil h1.title2 {
-    margin-left: 45px;
-  }
-  body.page-node-type-page-d-accueil h2 {
-    font-size: 1.4em;
-    margin-left: 40px;
-  }
-  body.page-node-type-page-d-accueil p {
-    font-size: 1.4em;
-    padding-top: 90px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  body.page-node-type-page-d-accueil h1 {
-    font-size: 8em;
-  }
-  body.page-node-type-page-d-accueil h1 span {
-    padding-bottom: 128px;
-  }
-  body.page-node-type-page-d-accueil h1.title {
-    margin-left: 30px;
-  }
-  body.page-node-type-page-d-accueil h1.title2 {
-    margin-left: 70px;
-  }
-  body.page-node-type-page-d-accueil h2 {
-    font-size: 2.5em;
-    margin-left: 55px;
-  }
-  body.page-node-type-page-d-accueil p {
-    font-size: 2em;
-    padding-top: 120px;
-  }
+  margin-left: 10px;
 }
 body.page-node-type-page-d-accueil .fold1 {
   background: url('../images/fold1.jpg') no-repeat;
@@ -7576,10 +7504,14 @@ body.page-node-type-page-d-accueil .fold1 p.textbody {
   letter-spacing: 2px;
 }
 body.page-node-type-page-d-accueil .fold1 button {
-  margin-top: 10vh;
-  margin-bottom: 2vh;
-  padding: 1vh 3vh;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
   text-align: center;
+  font-size: 20px;
+  max-width: 100%;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 body.page-node-type-page-d-accueil .fold1 .btn-outline {
   background-color: #ff5001;
@@ -7592,9 +7524,6 @@ body.page-node-type-page-d-accueil .fold1 .btn-primary.btn-outline {
   font-family: 'SourceSansPro';
   text-transform: uppercase;
   border-width: 2px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 3vh;
 }
 body.page-node-type-page-d-accueil .fold1 .btn-primary.btn-outline:hover {
   transition: all 200ms ease-in;
@@ -7712,22 +7641,6 @@ body.page-node-type-page-d-accueil .fold2 .slide5 .icontext {
   margin-left: 73vw;
   max-width: 20vw;
 }
-@media only screen and (min-width: 768px) {
-  body.page-node-type-page-d-accueil .fold2 p.textbody {
-    padding-top: 150px;
-  }
-  body.page-node-type-page-d-accueil .fold2 #carousel-fold2 span {
-    font-size: 1.4em;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  body.page-node-type-page-d-accueil .fold2 p.textbody {
-    padding-top: 200px;
-  }
-  body.page-node-type-page-d-accueil .fold2 #carousel-fold2 span {
-    font-size: 2em;
-  }
-}
 body.page-node-type-page-d-accueil .fold3 {
   background: url('../images/fold3.jpg') no-repeat;
   min-height: 100vh;
@@ -7765,60 +7678,32 @@ body.page-node-type-page-d-accueil .fold4 .leftSlid {
   border-style: solid;
   border-width: 12vh 0;
   border-left-width: 5vh;
-  border-color: #abdddc;
+  border-color: #aee1ff;
 }
 body.page-node-type-page-d-accueil .fold4 p.textbody {
   padding-top: 0;
   font-size: 2vh;
-}
-body.page-node-type-page-d-accueil .fold4 .list1 {
-  position: relative;
-  background: url('../images/1.jpg') no-repeat;
-  min-height: 20vh;
-  background-size: cover;
-  padding-top: 4vh;
-}
-body.page-node-type-page-d-accueil .fold4 .list2 {
-  position: relative;
-  background: url('../images/2.jpg') no-repeat;
-  min-height: 20vh;
-  background-size: cover;
-  padding-top: 4vh;
-}
-body.page-node-type-page-d-accueil .fold4 .list3 {
-  position: relative;
-  background: url('../images/3.jpg') no-repeat;
-  min-height: 20vh;
-  background-size: cover;
-  padding-top: 4vh;
-}
-body.page-node-type-page-d-accueil .fold4 .list4 {
-  position: relative;
-  background: url('../images/4.jpg') no-repeat;
-  min-height: 20vh;
-  background-size: cover;
-  padding-top: 4vh;
 }
 body.page-node-type-page-d-accueil .fold4 .rightSlid {
   margin: 10vh 0;
   border-style: solid;
   border-width: 2vh 0;
   border-right-width: 2vh;
-  border-color: #abdddc;
+  border-color: #aee1ff;
   position: relative;
   background: url('../images/fold4_1.jpg') no-repeat;
   min-height: 80vh;
   background-size: cover;
 }
 body.page-node-type-page-d-accueil .fold4 .slide1 .list {
-  margin-top: 12vh;
+  margin-top: 10vh;
 }
 body.page-node-type-page-d-accueil .fold4 .slide2 .rightSlid {
   background: url('../images/Fold4_2.jpg') no-repeat;
   background-size: cover;
 }
 body.page-node-type-page-d-accueil .fold4 .slide2 .list {
-  margin-top: 8vh;
+  margin-top: 10px;
 }
 body.page-node-type-page-d-accueil .fold4 .slide3 .rightSlid {
   background: url('../images/Fold4_3.jpg') no-repeat;
@@ -7843,75 +7728,13 @@ body.page-node-type-page-d-accueil .fold5 p.titlebody {
 body.page-node-type-page-d-accueil .fold5 .signup {
   margin-top: 200px;
 }
-body.page-node-type-page-d-accueil .fold5 #mc_embed_signup input.adressMail {
-  padding: 12px 20px;
-  background-color: #4ac2c1;
-  border-width: 0px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: white;
-  border-radius: 16px;
-}
-body.page-node-type-page-d-accueil .fold5 input:focus {
-  outline: none;
-  border: 2px solid #4ac2c1;
-}
-body.page-node-type-page-d-accueil .fold5 ::-webkit-input-placeholder {
-  color: white;
-}
-body.page-node-type-page-d-accueil .fold5 #mc-embedded-subscribe-form button {
-  background: none;
-  border: none;
-}
-body.page-node-type-page-d-accueil .fold5:active {
-  border: none;
-}
-body.page-node-type-page-d-accueil .fold5 #mc-embedded-subscribe.glyphicon-ok-circle {
-  margin-top: 0;
-  color: #4ac2c1;
-  font-size: 50px;
-  cursor: pointer;
-}
-@media only screen and (min-width: 360px) {
-  body.page-node-type-page-d-accueil .fold5 p.titlebody {
-    font-size: 1.6em;
-    padding-top: 90px;
-  }
-  body.page-node-type-page-d-accueil .fold5 .signup {
-    margin-top: 60px;
-  }
-  body.page-node-type-page-d-accueil .fold5 #mc_embed_signup input.adressMail {
-    font-size: 1em;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  body.page-node-type-page-d-accueil .fold5 p.titlebody {
-    font-size: 2em;
-    padding-top: 120px;
-  }
-  body.page-node-type-page-d-accueil .fold5 #mc_embed_signup input.adressMail {
-    width: 80%;
-    font-size: 1.6em;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  body.page-node-type-page-d-accueil .fold5 p.titlebody {
-    font-size: 3em;
-    padding-top: 200px;
-  }
-  body.page-node-type-page-d-accueil .fold5 .signup {
-    margin-top: 200px;
-  }
-}
 body.page-node-type-page-d-accueil .fold6 {
   position: relative;
-  background-color: #4ac2c1;
+  background-color: #d5e1eb;
   min-height: 300px;
 }
 body.page-node-type-page-d-accueil .fold6 h1.title {
-  color: white;
-  font-weight: 400;
+  font-weight: blod;
   font-size: 3em;
   margin: 40px 0;
   text-align: center;
@@ -7920,17 +7743,250 @@ body.page-node-type-page-d-accueil .fold6 .swiper-container {
   width: 100%;
   height: 15vh;
 }
-body.page-node-type-page-d-accueil .fold6 .swiper-container div.swiper-slide {
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: 0.5s ease-in-out;
-}
-body.page-node-type-page-d-accueil .fold6 .swiper-container div.swiper-slide:hover {
-  -webkit-filter: grayscale(0%);
-  -webkit-transition: 0.5s ease-in-out;
-}
 body.page-node-type-page-d-accueil .footer {
   margin: 0;
   border: none;
-  min-height: 40vh;
+  min-height: 300px;
+}
+body.page-node-type-page-d-accueil .footer p.title {
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+body.page-node-type-page-d-accueil #mc_embed_signup input.adressMail {
+  padding: 12px 20px;
+  background-color: #6ba1c5;
+  border-width: 0px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: white;
+  border-radius: 16px;
+}
+body.page-node-type-page-d-accueil input:focus {
+  outline: none;
+  border: 2px solid #6ba1c5;
+}
+body.page-node-type-page-d-accueil ::-webkit-input-placeholder {
+  color: white;
+}
+body.page-node-type-page-d-accueil #mc-embedded-subscribe-form button {
+  background: none;
+  border: none;
+}
+body.page-node-type-page-d-accueil #mc-embedded-subscribe-form button:focus {
+  outline: none;
+}
+body.page-node-type-page-d-accueil #mc-embedded-subscribe.glyphicon-ok-circle {
+  margin-top: 0;
+  color: #6ba1c5;
+  font-size: 50px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 320px) {
+  body.page-node-type-page-d-accueil h1 {
+    font-size: 3em;
+  }
+  body.page-node-type-page-d-accueil h1.title {
+    margin-left: 0px;
+  }
+  body.page-node-type-page-d-accueil h1.title2 {
+    margin-left: 18px;
+    margin-top: 0;
+  }
+  body.page-node-type-page-d-accueil h1 span {
+    padding-bottom: 48px;
+  }
+  body.page-node-type-page-d-accueil h2 {
+    font-size: 1.2em;
+    margin-left: 10px;
+  }
+  body.page-node-type-page-d-accueil p.textbody {
+    font-size: 1.2em;
+    padding-top: 30px;
+    text-align: justify;
+  }
+  body.page-node-type-page-d-accueil .footer .iconsocial {
+    display: inline-block;
+  }
+  body.page-node-type-page-d-accueil .footer .iconsocial a {
+    font-size: 1.2em;
+    color: transparent;
+  }
+  body.page-node-type-page-d-accueil .footer i {
+    min-width: 26px;
+    color: #6ba1c5;
+    margin-right: 4%;
+  }
+  body.page-node-type-page-d-accueil .footer .adresse {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-bottom: 10%;
+  }
+  body.page-node-type-page-d-accueil .footer .bloc1Footer .nav {
+    margin-bottom: 10%;
+  }
+  body.page-node-type-page-d-accueil .footer .bloc1Footer a {
+    color: black;
+  }
+  body.page-node-type-page-d-accueil .footer p.title {
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  body.page-node-type-page-d-accueil div.fold1 button {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  body.page-node-type-page-d-accueil div.fold5 p.titlebody {
+    font-size: 1.6em;
+    padding-top: 80px;
+  }
+  body.page-node-type-page-d-accueil div.fold5 .signup {
+    margin-top: 60px;
+  }
+  body.page-node-type-page-d-accueil div.fold5 #mc_embed_signup input.adressMail {
+    font-size: 1em;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body.page-node-type-page-d-accueil h1 {
+    font-size: 4em;
+    margin-top: 100px;
+  }
+  body.page-node-type-page-d-accueil h1 span {
+    padding-bottom: 62px;
+  }
+  body.page-node-type-page-d-accueil h1.title {
+    margin-left: 20px;
+  }
+  body.page-node-type-page-d-accueil h1.title2 {
+    margin-left: 45px;
+  }
+  body.page-node-type-page-d-accueil h2 {
+    font-size: 1.4em;
+    margin-left: 40px;
+  }
+  body.page-node-type-page-d-accueil p.textbody {
+    font-size: 1.6em;
+    padding-top: 120px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: justify;
+  }
+  body.page-node-type-page-d-accueil div.fold1 button {
+    margin-top: 160px;
+  }
+  body.page-node-type-page-d-accueil div.fold2 p.textbody {
+    padding-top: 150px;
+  }
+  body.page-node-type-page-d-accueil div.fold2 #carousel-fold2 span {
+    font-size: 1.4em;
+  }
+  body.page-node-type-page-d-accueil div.fold5 p.titlebody {
+    font-size: 2em;
+    padding-top: 100px;
+  }
+  body.page-node-type-page-d-accueil div.fold5 p.textbody {
+    padding-top: 100px;
+  }
+  body.page-node-type-page-d-accueil div.fold5 #mc_embed_signup input.adressMail {
+    width: 80%;
+    font-size: 1.6em;
+  }
+  body.page-node-type-page-d-accueil .footer .iconsocial {
+    display: block;
+  }
+  body.page-node-type-page-d-accueil .footer .iconsocial a {
+    color: black;
+  }
+  body.page-node-type-page-d-accueil .footer .adresse {
+    display: block;
+  }
+  body.page-node-type-page-d-accueil .footer p.title {
+    margin-bottom: 5%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body.page-node-type-page-d-accueil p.textbody {
+    font-size: 1.6em;
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+  }
+  body.page-node-type-page-d-accueil div.fold1 button {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body.page-node-type-page-d-accueil h1 {
+    font-size: 8em;
+  }
+  body.page-node-type-page-d-accueil h1 span {
+    padding-bottom: 128px;
+  }
+  body.page-node-type-page-d-accueil h1.title {
+    margin-left: 30px;
+  }
+  body.page-node-type-page-d-accueil h1.title2 {
+    margin-left: 70px;
+  }
+  body.page-node-type-page-d-accueil h2 {
+    font-size: 2.5em;
+    margin-left: 55px;
+  }
+  body.page-node-type-page-d-accueil p.textbody {
+    font-size: 2em;
+    padding-top: 160px;
+    text-align: left;
+  }
+  body.page-node-type-page-d-accueil div.fold1 button {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 40px;
+  }
+  body.page-node-type-page-d-accueil div.fold2 p.textbody {
+    padding-top: 200px;
+  }
+  body.page-node-type-page-d-accueil div.fold2 #carousel-fold2 span {
+    font-size: 2em;
+  }
+  body.page-node-type-page-d-accueil div.fold4 h1 {
+    font-size: 6em;
+  }
+  body.page-node-type-page-d-accueil div.fold4 h1 span {
+    padding-bottom: 80px;
+  }
+  body.page-node-type-page-d-accueil div.fold4 h1.title2 {
+    margin-left: 50px;
+  }
+  body.page-node-type-page-d-accueil div.fold4 p.textbody {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  body.page-node-type-page-d-accueil div.fold5 p.titlebody {
+    font-size: 3em;
+    padding-top: 200px;
+  }
+  body.page-node-type-page-d-accueil div.fold5 .signup {
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body.page-node-type-page-d-accueil {
+    /* For mobile phones: */
+  }
+  body.page-node-type-page-d-accueil .fold1,
+  body.page-node-type-page-d-accueil .fold2,
+  body.page-node-type-page-d-accueil .fold3,
+  body.page-node-type-page-d-accueil .fold4,
+  body.page-node-type-page-d-accueil .fold5,
+  body.page-node-type-page-d-accueil .fold6[class*="col-"] {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
